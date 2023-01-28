@@ -12,6 +12,7 @@
 # Problems with imports? Could try `export PYTHONPATH=$PYTHONPATH:`pwd`` from root project dir...
 import os
 import sys
+import sphinx_autosummary_accessors
 sys.path.insert(0, os.path.abspath('..'))  # Source code dir relative to this file
 
 # -- Project information -----------------------------------------------------
@@ -52,7 +53,7 @@ nbsphinx_allow_errors = True  # Continue through Jupyter errors
 add_module_names = False # Remove namespaces from class/method signatures
 
 # Add any paths that contain templates here, relative to this directory.
-templates_path = ['_templates']
+templates_path = ['_templates', sphinx_autosummary_accessors.templates_path]
 
 # Exclusions
 # To exclude a module, use autodoc_mock_imports. Note this may increase build time, a lot.
@@ -102,7 +103,7 @@ html_css_files = ["readthedocs-custom.css"] # Override some CSS settings
 
 # Custom Theme
 
-# html_theme = "sphinx_book_theme"
+html_theme = "sphinx_book_theme"
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
