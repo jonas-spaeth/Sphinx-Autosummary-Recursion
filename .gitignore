@@ -1,0 +1,7 @@
+.idea
+docs/_autosummary
+docs/_build
+mytoolbox/__pycache__/
+mytoolbox/mysubpackage/__pycache__/
+mytoolbox/mysubpackage/mysubsubpackage/__pycache__/
+venv-docs/
